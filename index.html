@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Digital Twin</title>
+</head>
+<body>
+  <script>
+    var p = new URLSearchParams(window.location.search);
+    var id = p.get('assetId');
+    if (id) {
+      window.location.replace('https://trailsignup-958b7be20232cd.my.site.com/digitaltwin/?assetId=' + id);
+    } else {
+      document.write('Missing assetId parameter.');
+    }
+  </script>
+</body>
+</html>
