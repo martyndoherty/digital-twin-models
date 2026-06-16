@@ -3,16 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>Digital Twin</title>
-</head>
-<body>
   <script>
     var p = new URLSearchParams(window.location.search);
     var id = p.get('assetId');
     if (id) {
-      window.location.replace('https://trailsignup-958b7be20232cd.my.site.com/digitaltwin/?assetId=' + id);
-    } else {
-      document.write('Missing assetId parameter.');
+      var url = 'https://trailsignup-958b7be20232cd.my.site.com/digitaltwin/?assetId=' + id;
+      document.write('<meta http-equiv="refresh" content="0;url=' + url + '">');
     }
   </script>
-</body>
+</head>
+<body></body>
 </html>
